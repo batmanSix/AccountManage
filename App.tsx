@@ -6,7 +6,11 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import type { PropsWithChildren } from 'react';
+import TextComp from './src/text';
+import ImageDemo from './src/image';
+import ImageBackDemo from './src/imageB';
+import TextInputS from './src/textInput';
 import {
   SafeAreaView,
   ScrollView,
@@ -24,12 +28,11 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-function Section({children, title}: SectionProps): JSX.Element {
+function Section({ children, title }: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -72,6 +75,10 @@ function App(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <TextComp />
+        <ImageDemo />
+        <ImageBackDemo />
+        <TextInputS />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
