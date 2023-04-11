@@ -17,7 +17,7 @@ const TextInputS = () => {
         defaultValue="默认内容"
         blurOnSubmit={false}
         caretHidden={false}
-        keyboardType="default"
+        keyboardType="numbers-and-punctuation"
       />
     </View>
   );

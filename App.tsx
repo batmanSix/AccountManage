@@ -20,7 +20,9 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import ButtonDemo from './src/ButtonDemo';
+import ScrollViewDemo from './src/ScrollViewDemo';
+import SectionListDemo from './src/SectionListDemo';
 import {
   Colors,
   DebugInstructions,
@@ -79,6 +81,9 @@ function App(): JSX.Element {
         <ImageDemo />
         <ImageBackDemo />
         <TextInputS />
+        <ButtonDemo />
+        <ScrollViewDemo />
+        <SectionListDemo />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
